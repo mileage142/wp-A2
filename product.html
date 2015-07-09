@@ -5,17 +5,14 @@
     <title>Geoff Thomas - Buy now</title>
     <link rel="Stylesheet" href="a1.css" type="text/css" />
 
-    <!-- We will cover style later. Skip down to the body tag -->
-   
-
-    </style>
   </head>
 
   <body>
 
     <header>
-      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-      <div><img src='http://mams.rmit.edu.au/pydyrxvec44m.png' alt='rmit logo'/> Web Programming Assingments SP2
+     
+      <div>
+        <img src="images/header.png" alt='Geoff Thomas - Woodfired Potter' width='100%'/>
       </div>
     </header>
 
@@ -25,12 +22,18 @@
 
 
     <main>
-      <img src="images/raw/dsc_2271.jpg" style="border:0; width:400px; height:300px" alt='Small Bowl' />
-      <h2>Anagama Tea bowl</h2>
-      <p></p>
-      <p>anagama bowl: Woodfired bowl, various styles, good to hold in your hand </p>
+      <img src="images/pots/blue_leaf_bowl.jpg" style="border:0; width:400px";  alt='Small Bowl' />
+        <h2>Anagama Tea bowl</h2>
+        <p></p>
+        <p>anagama bowl: Woodfired bowl, various styles, good to hold in your hand </p>
 
-      <form action="cioreteaching01.csit.rmit.edu.au/~e54061/wp/formprocessor.php" method="POST">
+        <form action="www.coreteaching01.csit.rmit.edu.au/~e54061/wp/formprocessor.php" method="POST">
+          price: <value=40.00 name="unit-price">
+          id: <value = B1 name="productID">
+          quantity: <input type="text" name="qty">
+
+          <input type="submit" value="Submit">
+        </form>
 
         
 
@@ -38,6 +41,7 @@
         <input type='number' name='qty' min=1 max=10 step=1 title='pop-up error message' />  
       </form>
 
+    </main>
 
     <footer>
       &copy; Miles Thomas
