@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Geoff Thomas - Buy now</title>
     <link rel="Stylesheet" href="a1.css" type="text/css" />
+    <style>
+      .error
+      {
+        visibility: hidden;
+      }
+    </style>
 
   </head>
 
@@ -17,7 +23,9 @@
     </header>
 
     <nav>
-      <a href="home.html">Return to Home</a> | <a href="a2">Read Privacy Statement</a>
+      <a href="home.html">Return to Home</a> | 
+      <a href="exhibitions.html">See upcoming Exhibitions</a> |
+      <a href="a2">Read Privacy Statement</a>
     </nav>
 
 
@@ -25,20 +33,66 @@
       <img src="images/pots/blue_leaf_bowl.jpg" style="border:0; width:400px";  alt='Small Bowl' />
         <h2>Anagama Tea bowl</h2>
         <p></p>
-        <p>anagama bowl: Woodfired bowl, various styles, good to hold in your hand </p>
+        <p>anagama bowl: Woodfired bowl, various styles, good to hold in your hand </p><br>
 
-        <form action="www.coreteaching01.csit.rmit.edu.au/~e54061/wp/formprocessor.php" method="POST">
-          price: <value=40.00 name="unit-price">
-          id: <value = B1 name="productID">
-          quantity: <input type="text" name="qty">
+        <p> Price : $40.00 each
 
-          <input type="submit" value="Submit">
+        <script>
+          function formVal()
+          {
+            if(document.getElementById('qty').value<1)
+            {
+              document.getElementById('qtyError').style.visibility='visible';
+            }
+            else
+            {
+              continue;
+            }
+          }
+        </script>
+
+
+        <form action="http://coreteaching01.csit.rmit.edu.au/~e54061/wp/formprocessor.php" method="post" onsubmit='formVal();'>
+          <input type='hidden' value=40.00 id="unit-price" name="unit-price"> <br>
+
+          <script>
+            if(document.getElementById('qty').value != 1)
+            {
+            var totalPrice = ((document.getElementById("unit-price").value)*(document.getElementById('qty').value));
+
+            document.getElementById('total').innerHtml = this.totalPrice;
+            }
+
+          </script>
+          <script>
+            var increaseAmount = function()
+            {
+              document.getElementById('qty').value==document.getElementById('qty').value+1;
+            }
+            var decreaseAmount = function()
+            {
+              document.getElementById('qty').value = document.getElementById('qty').value-1;
+              /*document.getElementById('qty').value * document.getElementById('price') = document.getElementById('total');*/
+            }
+          </script>
+
+          <input type='hidden' id='price' value=40.00 name="price"> 
+          <input type='hidden' id='productId' value=B1 name="productId"> 
+          <!--<input type='number' id='qty' name='qty' value=null min=1 max=10 step=1 title='pop-up error message' /> <br>-->
+          <input type='constant' id='total' value=40.00 name='total'>
+          <div class='spinButton'>
+            quantity: <input type='button' value='-' onclick='decreaseAmount();'>
+            <input type='number' id='qty' name='qty' value=null title='pop-up error message' /> 
+            <input type='button' value='+' onclick='increaseAmount();'><br>
+            </div>
+
+          <input  type="submit" value="submit">
         </form>
 
         
 
 
-        <input type='number' name='qty' min=1 max=10 step=1 title='pop-up error message' />  
+         
       </form>
 
     </main>
