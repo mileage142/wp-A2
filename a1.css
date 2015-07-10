@@ -1,28 +1,30 @@
-
-
 body
 {
-    background:url();
-    background-size: cover;
-    margin: 0px;
-        padding: 0px;
-        color: black;
+  background:url();
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  color: black;
 }
   
 header 
 {
-    font-size: 300%;
-    font-weight: bold;
-    background-color: #9e9e9e;
-    color: #581616;
-    padding: 15px;
-    width: 100%;
+  font-size: 300%;
+  font-weight: bold;
+  background-color: #9e9e9e;
+  color: #581616;
+  padding: 15px;
+  width: 100%;
 }
- header * 
- {
-        vertical-align: middle;
-        margin-right: 40px;
- }
+header * 
+{
+  vertical-align: middle;
+  margin-right: 40px;
+}
+p
+{
+  font-size: 25px;
+}
 /* Links */
 a:link
 {
@@ -42,15 +44,12 @@ a:hover, a:active
   background-color: #9e9e9e;
 }
 
-{
-
-}
-
 div.thumbnail
 {
 	
   opacity:0.95;
   padding: 15px;
+  float: left;
   
   text-align: center;
 
@@ -58,16 +57,17 @@ div.thumbnail
 }
 div.thumbnail img
 {
-  display: inline;
+  display: inline-;
   float: left;
-  width: 200px;
+  width: 60%;
   margin: 5px;
 }
 div.desc
 {
-  
   text-align: center;
-  width: 200px;
+  font-size: 20px;
+  padding:30px;
+  width: 60%;
 }
 div.error
 {
@@ -82,46 +82,56 @@ div.topTail img
 }
 
       
-    main
-    {
-      background-color: #EBE6E6;
-      padding: 10px 10px 50px 30px;
-    }
-    img.main
-    { 
-      
-    }
-    p.main
-    {
-      padding:10px;
-    }
+main
+ {
+  background-color: #EBE6E6;
+  float: left;
+  padding: 10%;
+  width: 100%;
+ }
+img.main
+  { 
+    border:0; 
+    float:left; 
+    width:400px; 
+    height:400px
+  }
+p.main
+  {
+    padding:20px;
+    float: right;
+    font-size: 20px;
+  }
+p.clear
+  {
+    clear: both;
+  }
 
-      nav,
-      footer {
-        background-color: #DCD2D2;
-        padding: 15px;
-        width:100%;
-
-      }
-      priv_link
-      {
-        text-align: right;
-      }
-
-
-      footer * {
-        vertical-align: middle;
-        background-image: <url('images/header.png');
-      }
-
-    
-<!--
-@media only screen and (device-width:768px) and (orientation: landscape)
+nav,
+footer 
 {
-
+  clear: both;
+  background-color: #DCD2D2;
+  padding: 15px;
+  width:100%;
+}
+priv_link
+{
+  text-align: right;
 }
 
-@media only screen and (min-device-width:320px) and (max-device-width: 480px)
-{
 
+footer *
+{
+  vertical-align: middle;
+  background-image: <url('images/header.png');
 }
+form
+  {
+    padding: 5px;
+  }
+div.spinButton
+  {
+    width: 300px;
+  }
+
