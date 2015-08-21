@@ -71,12 +71,12 @@
       Please enter your name, address and credit card details.
     </h2>
       <table>
-        <form action="cart.php" method="post" onsubmit='formVal();'>
+        <form action="confirmation.php" method="post" onsubmit='formVal();'>
           <input type='hidden' id='price' value=40.00 name="price"> 
           <input type='hidden' id='productId' value=B1 name="productId"> 
           <!--<input type='number' id='qty' name='qty' value=null min=1 max=10 step=1 title='pop-up error message' /> <br>-->
         <tr><td>First name: </td><td></td><td> <input type='text' id='fname'  name='fname' value=<?php echo $_SESSION['fname']; ?>
-         > <?php if(isset$code) && ($code == 1) {echo "class=errorMsg" ;} ?></td></tr>
+         > <?php //if(isset$code) && ($code == 1) {echo "class=errorMsg" ;} ?></td></tr>
 
         <tr><td>Last name: </td><td></td><td> <input type='text' id='lname' name='lname' value=<?php echo $_SESSION['lname']; ?>
           required='required'></td></tr>
