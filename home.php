@@ -1,5 +1,6 @@
 <?php
   session_start();
+  $_SESSION["user"] = 'guest';
   error_reporting(E_ALL);//remove later
   #page not found
   include_once('topPart.php');
