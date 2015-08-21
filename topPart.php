@@ -24,9 +24,15 @@
       <a href="home.php">Home</a> |
       <a href="products.php">Purchase Geoff's Work</a> | 
       <a href="exhibitions.php">See upcoming Exhibitions</a> |
-      <a href="privacy.php">Read Privacy statement</a>
-      <a href="sitemap.php">SITEMAP</a>
-      
+      <a href="privacy.php">Read Privacy statement</a> |
+      <?php
+       if(isset($_SESSION['fname']))
+        { ?>
+        <a href="orderlog.php">Recent Orders</a> |
+        <?php } ?>
+        <a href="sitemap.php">SITEMAP</a>
+
+
     
 
     <div class ="login">
@@ -38,6 +44,8 @@
           echo "Welcome "; 
           echo $_SESSION['fname'];
           ?>
+          <br>
+          
           <br>
           <a href='logout.php'> LOGOUT</a>
 
