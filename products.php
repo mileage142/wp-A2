@@ -9,43 +9,88 @@
       <h2>Gallery<br><br></h2>
       <p>Please click on a pot to purchase</p>
 
+
+
       <div class="thumbnail">
-      <a href="product.php"><img src="images/pots/blue_leaf_bowl.jpg" alt= "Small Bowl"></a> 
+        <img src="images/pots/blue_leaf_bowl.jpg" alt= "Small Bowl"></a> 
+     
+      <div class="desc">Small grey bowl with a blue leaf pattern<br>
+        <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=1 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
+
+
+      <img src="images/pots/blue_black_bowl.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Small grey bowl with a blue leaf pattern</div>
-            
-      <a href="product.php"><img src="images/pots/blue_black_bowl.jpg" alt= "Small Bowl"></a> 
-      
-      <div class="desc">Temuku bowl with blue speckle</div>
+      <div class="desc">Temuku bowl with blue speckle<br>
+         <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=2 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
 
       
-      <a href="product.php"><img src="images/pots/anagama_ash_jar.jpg" alt= "Small Bowl"></a> 
+      <img src="images/pots/anagama_ash_jar.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Large Anagama fired jar with ash melt</div>
+      <div class="desc">Large Anagama fired jar with ash melt<br>
+       <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=3 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
 
 
       
       <a href="product.php"><img src="images/pots/covered_jar.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Anagama ash glaze covered jar</div>
+      <div class="desc">Anagama ash glaze covered jar<br>
+         <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=4 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
 
 
       
       <a href="product.php"><img src="images/pots/flame_cylinder.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Small cylindrical jar with wad marks</div>
+      <div class="desc">Small cylindrical jar with wad marks<br>
+         <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=5 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
 
 
       
       <a href="product.php"><img src="images/pots/leaf_bowl.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Small grey bowl with a iron leaf pattern</div>
+      <div class="desc">Small grey bowl with a iron leaf pattern<br>
+         <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=6 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
 
 
       
       <a href="product.php"><img src="images/pots/small_vase.jpg" alt= "Small Bowl"></a> 
       
-      <div class="desc">Small brown vase</div>
+      <div class="desc">Small brown vase<br>
+         <!-- need to style the button -->
+      <form action="product.php" method="get">
+          <input type='hidden' id='product' value=7 name="product"> 
+            <input submit type="submit" value ="Buy Now" alt= "Small Bowl"></a> 
+      </form>
+      </div>
     </div>
 
     </main>  

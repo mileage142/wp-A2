@@ -2,6 +2,8 @@ body
 {
   background:url();
   background-size: cover;
+  background-color: #DCD2D2
+  ;
   margin: 0px;
   padding: 0px;
   color: black;
@@ -15,6 +17,7 @@ header
   color: #581616;
   padding: 15px;
   width: 100%;
+  font-size:30px;
 }
 header * 
 {
@@ -47,6 +50,8 @@ div.login
 {
   display: inline;
   float: right;
+  background-color: #ECD2D2;
+  padding-right: 20px;
 }
 div.thumbnail
 {

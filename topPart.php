@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     
 
-    <link rel="Stylesheet" href="a1.css" type="text/css" />
+    <link rel="Stylesheet" href="a2.css" type="text/css" />
     <link rel="icon" href="images/potterMark.jpg" type="image/x-icon" />
 
   </head>
@@ -26,11 +26,11 @@
       <a href="exhibitions.php">See upcoming Exhibitions</a> |
       <a href="privacy.php">Read Privacy statement</a>
       
-    </nav>
+    
 
     <div class ="login">
-        <form action="login.php" method="post">
-          LOGIN<br>
+        <form action="login.php" method="POST">
+          Please Login<br>
           <table>
           <tr>
           <td>Username: </td>
@@ -41,6 +41,9 @@
         <td><input type="password" id="password"></td>
           </tr>
         </table>
+        <input type="submit" value='Log In'>
+      
 
 
       </div>
+    </nav>
